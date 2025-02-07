@@ -1,0 +1,12 @@
+.container>.left-column {
+    float: left;
+    width: 60%;
+    font-size: 100px;
+    background-color: #28a745;
+}
+.container>.right-column {
+    float: right;
+    width: 38%;
+    font-size: 100px;
+    background-color: grey;
+}
