@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-flow: column wrap;
+}
+header{
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+.navbar{
+    background-color: #2c3e50;
+    padding: 10px 0;
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+.navbar ul li{
+    padding: 0 10px;
+    list-style-type: none;
+}
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    background-color: #f39c12;
+}
+.main_content{
+    display: flex;
+    flex-direction: row-reverse; /* Để cho sidebar nằm trên cùng 1 hàng với content và nằm bên trái so với content */
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    background-color: #1abc9c;
+    padding: 20px 0;
+    justify-content: center;
+}
+.sidebar{
+    background-color: #7274FF;
+    color: white;
+    padding: 10px;
+    width: 20%;
+    text-align: center;
+}
+footer{
+    background-color: #555555;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+@media only screen and (max-width: 768px){
+    .container{
+        display:flex;
+        flex-direction: column;
+    }
+}
