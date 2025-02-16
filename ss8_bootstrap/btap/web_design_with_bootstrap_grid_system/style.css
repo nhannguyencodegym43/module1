@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+.content{
+    background-color: #7274FF;
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+.sidebar{
+    background-color: #0056b3;
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+footer{
+    background-color: #004C00;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
