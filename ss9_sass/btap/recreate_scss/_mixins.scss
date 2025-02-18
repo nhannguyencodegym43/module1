@@ -1,0 +1,24 @@
+$background-color: #84c754;
+$border-right: 1px solid grey;
+$auto_overflow: auto;
+
+@mixin grid-wrapper{
+  overflow: $auto_overflow;
+  position: relative;
+  height: 250px;
+}
+
+@mixin grid-content{
+  width:8.33%;
+  margin:0;
+  border-right: $border-right;
+  height:100%;
+  float:left;
+  background-color: $background-color;
+}
+
+@mixin reset{
+  *{
+    box-sizing: border-box;
+  }
+}

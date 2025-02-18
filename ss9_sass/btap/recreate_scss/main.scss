@@ -1,0 +1,12 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+@include m.reset;
+
+.gridwrapper{
+@include m.grid-wrapper;
+}
+
+.gridcontent{
+@include m.grid-content;
+}
