@@ -1,0 +1,42 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+@include m.reset;
+
+body{
+  @include m.web_body;
+}
+
+.header{
+  @include m.web_header;
+}
+
+.nav{
+  @include m.web_navbar;
+}
+
+.hero{
+  @include m.web_hero;
+}
+
+.services{
+  @include m.web_services;
+}
+
+.service-container{
+  @include m.web_services_container;
+}
+
+.service{
+  @include m.web_services_card;
+}
+
+.testimonials{
+  @include m.web_testimonials;
+}
+
+.footer{
+    @include m.web_footer;
+}
+
+@include m.mobile_responsive;

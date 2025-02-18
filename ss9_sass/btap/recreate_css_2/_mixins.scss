@@ -1,0 +1,96 @@
+$text-font: Arial, sans-serif;
+$background-color: #333;
+$text-color: white;
+$header-padding: 15px 20px;
+
+@mixin reset{
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+} /* Phải bên trong một Selector nào đó*/
+
+@mixin web_body{
+  font-family: $text-font;
+  height: 100vh;
+}
+
+@mixin web_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $background-color;
+  padding: $header-padding;
+  color: $text-color;
+}
+
+@mixin web_navbar{
+  ul{
+      list-style: none;
+      display: flex;
+      li{
+        margin: 0 15px;
+        a{
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  } /* Giảm bớt trùng lặp selector*/
+
+@mixin web_hero{
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #f4f4f4;
+    h1{
+      margin-bottom: 20px;
+    }
+    p{
+      margin-bottom: 20px;
+    }
+  } /* Giảm bớt trùng lặp selector*/
+
+@mixin web_services{
+    text-align: center;
+    padding: 50px;
+}
+
+@mixin web_services_container{
+    display: flex;
+    justify-content: space-around;
+  }
+
+@mixin web_services_card{
+  background-color: lightblue;
+  padding: 20px;
+  margin: 10px;
+}
+
+@mixin web_testimonials{
+    text-align: center;
+    padding: 50px;
+    background-color: #ddd;
+    h2{
+        margin-bottom: 20px;
+    }
+  } /* Giảm bớt trùng lặp selector*/
+
+@mixin web_footer{
+  text-align: center;
+  padding: 20px;
+  background-color: $background-color;
+  color: $text-color;
+}
+
+@mixin mobile_responsive{
+  @media (max-width: 768px) {
+    .nav ul {
+      display: none;
+    }
+
+    .service-container {
+      flex-direction: column;
+    }
+  }
+}
