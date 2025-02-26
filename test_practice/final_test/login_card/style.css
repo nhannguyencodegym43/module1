@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 1px solid black;
+    width: 50%;
+    margin: 0 auto;
+    height: 80vh;
+}
+
+.container h1 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.container .name {
+    margin: 0 auto;
+    border: 1px solid black;
+    width: 70%;
+    height: 10%
+}
+
+.container .password {
+    margin: 10px auto;
+    border: 1px solid black;
+    width: 70%;
+    height: 10%
+}
+
+.container h3 {
+    width: 20%;
+    margin: 10px auto;
+    height: 20%;
+    text-align: center;
+}

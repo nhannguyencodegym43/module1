@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+}
+
+.responsive {
+    max-width: calc(4 * 18rem + 3 * 20px);
+    margin: 1.5rem auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(18rem, 1fr));
+    gap: 20px;
+}
+
+.card {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Phóng to ảnh khi hover */
+    border: 2px solid #333;
+}
+
+@media (max-width: 1199px) {
+    .responsive {
+        grid-template-columns: repeat(2, minmax(18rem, 1fr));
+    }
+}
+
+@media (max-width: 899px) {
+    .responsive {
+        grid-template-columns: repeat(1, minmax(18rem, 1fr));
+    }
+}
